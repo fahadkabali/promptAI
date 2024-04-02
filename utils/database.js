@@ -1,4 +1,7 @@
 import mongoose from 'mongoose';
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 let isConnected = false; // track the connection
 
@@ -13,6 +16,8 @@ export const connectToDB = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI, {
       dbName: "share_prompt",
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
     })
 
     isConnected = true;
