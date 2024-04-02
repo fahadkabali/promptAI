@@ -4,7 +4,7 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-  title: "Prompt",
+  title: "Spur",
   description: "Discover & Share AI Prompts",
 };
 
